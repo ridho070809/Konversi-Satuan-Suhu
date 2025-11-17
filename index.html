@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+
+ <head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Konverter Suhu Universal</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2>Konverter Suhu Universal</h2>
+
+    <input type="number" id="valueInput" placeholder="Masukkan nilai suhu..." />
+<label>Dari:</label>
+
+<select id="fromUnit">
+
+  <option value="C">Celsius (°C)</option>
+  
+  <option value="K">Kelvin (K)</option>
+  
+  <option value="F">Fahrenheit (°F)</option>
+
+  <option value="R">Reamur (°R)</option>
+
+</select>
+
+<label>Ke:</label>
+
+<select id="toUnit">
+
+  <option value="C">Celsius (°C)</option>
+
+  <option value="K">Kelvin (K)</option>
+
+  <option value="F">Fahrenheit (°F)</option>
+
+  <option value="R">Reamur (°R)</option>
+
+</select>
+
+
+<button onclick="convertTemp()">Konversi</button>
+
+<button onclick="resetAll()" class="reset">Reset</button>
+
+
+<div class="result" id="resultBox">Hasil konversi akan muncul di sini.</div>
+
+
+<h3>Penjelasan Singkat:</h3>
+
+<p><b>Celsius (°C)</b> digunakan secara luas dalam kehidupan sehari-hari dan sains umum.</p>
+
+<p><b>Kelvin (K)</b> adalah satuan suhu absolut yang digunakan dalam sains dan fisika.</p>
+
+<p><b>Fahrenheit (°F)</b> umum dipakai di Amerika Serikat untuk pengukuran cuaca.</p>
+
+<p><b>Reamur (°R)</b> dahulu populer di Eropa, kini jarang dipakai namun masih ditemukan dalam konteks tertentu.</p>
+
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
